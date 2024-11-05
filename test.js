@@ -4,14 +4,14 @@ import { generaClaveAcceso } from "./src/index.js";
 const claveAcceso = generaClaveAcceso(
   "03102024",
   "07",
-  "1791984722001",
+  "1700001234001",
   "1",
-  "001012",
-  "000501756",
-  "04001001",
+  "001001",
+  "123456789",
+  "98765432",
   "1"
 );
 
 console.log(
-  `El dígito verificador para la clave de acceso ${claveAcceso}`
+  `Clave de acceso ${claveAcceso.clave}. Error: ${claveAcceso.error} `
 );
