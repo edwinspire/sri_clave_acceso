@@ -1,5 +1,4 @@
-
-export function calcularDigitoVerificador(
+export function generaClaveAcceso(
   fecha,
   tipo_comprobante,
   ruc_emisor,
@@ -90,23 +89,5 @@ COMPROBANTE DE RETENCIÓN 07`);
     digitoVerificador = 11 - residuo;
   }
 
-  return digitoVerificador;
+  return `${claveAcceso}${digitoVerificador}` ;
 }
-
-// Ejemplo de uso
-const claveAcceso = "031020240717919847220011001012000501756040010011";
-//const digitoVerificador = calcularDigitoVerificador(claveAcceso);
-const digitoVerificador = calcularDigitoVerificador(
-  "03102024",
-  "07",
-  "1791984722001",
-  "1",
-  "001012",
-  "000501756",
-  "04001001",
-  "1"
-);
-
-console.log(
-  `El dígito verificador para la clave de acceso ${claveAcceso} es: ${digitoVerificador}`
-);
