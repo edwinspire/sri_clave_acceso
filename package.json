@@ -1,0 +1,10 @@
+{
+  "name": "sri_clave_acceso",
+  "version": "1.0.0",
+  "description": "Generador de clave de acceso para documentos electrónicos del SRI Ecuador",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "edwinspire"
+}
